@@ -10,9 +10,7 @@
     const themeClick = () => {
       theme = theme === "light" ? "dark" : "light";
     }
-    $: if (flag) { 
-      console.log('aa');
-      
+    $: if (flag) {      
       if (theme === "dark") {
         document.documentElement.classList.add("dark");
       } else {
@@ -105,7 +103,7 @@ border-night2
     md:justify-between
   ">
     <li class="md:ml-auto">
-      <a role="menuitem" sveltekit:prefetch href="/" class="                      
+      <a role="menuitem" sveltekit:prefetch href="https://github.com/jmjaimesmendoza/portfolio" class="                      
       px-4
       flex
       items-center
