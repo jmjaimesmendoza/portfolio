@@ -1,0 +1,38 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Card from "../components/Card.astro";
+import SkillList from "../components/SkillList.astro";
+import { cardlist } from "../../public/info/cardList";
+const iconList =[{title:'Typescript',file:'typescript'},
+      {title:'Python',file:'python'},
+      {title:'React',file:'react'},
+      {title:'Svelte',file:'svelte'},
+      {title:'Git',file:'git'},
+      {title:'Node',file:'nodejs'}]
+---
+<SiteLayout>
+	<div class={"justify-start items-start"}>
+		<h1 class="text-4xl md:text-6xl lg:text-7xl">Juan Martin Jaimes Mendoza</h1>
+		<h2 class="text-xl md:text-3xl lg:text-4xl text-aurora0 dark:text-frost0">Fullstack Web Developer / Computer Science Student</h2>
+	</div>
+	<div class="">
+		<img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />
+	</div>
+	<div class="mt-4 md:flex mx-2">
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad id quisquam odio quod consectetur nihil minima pariatur dolor quis labore corporis, veniam atque officia adipisci cupiditate cumque tenetur nostrum accusamus velit dignissimos, dolorem sequi! Numquam omnis distinctio totam tempora fugit hic quam maxime tempore exercitationem eligendi. Exercitationem animi placeat iure!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+	</div>
+	<div class="mt-24 mx-2 flex flex-col items-center">
+		<h3 class="text-5xl font-semibold">Skills</h3>
+		<SkillList style={'grid mt-8 gap-16 grid-cols-1 md:grid-cols-2 lg:md:grid-cols-6 text-2xl items-center'} items={iconList} />
+		<p class="mx-auto mt-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+	</div>
+	<div class="mt-24 mx-2 flex flex-col items-center">
+		<h3 class="text-5xl font-semibold">Experience</h3>		
+		<div class="grid mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			{cardlist.map((card) => (
+				<Card {...card}/>
+			))}
+		</div>
+	</div>
+	</SiteLayout>

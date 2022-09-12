@@ -1,0 +1,32 @@
+---
+const { linkTo = "#", img, title, body } = Astro.props;
+---
+<a href={linkTo} class=" focus:outline-none
+focus-visible:ring-4
+transition
+ring-aurora1
+dark:ring-frost1
+ring-offset-4
+ring-offset-snow0 
+dark:ring-offset-night1 
+block 
+min-h-[375px] 
+max-h-[375px] 
+md:min-h-[360px] 
+md:max-h-[360px] 
+lg:min-h-[350px] 
+lg:max-h-[350px] 
+p-6 
+max-w-sm 
+bg-white 
+rounded-lg border 
+border-gray-200 
+shadow-md 
+hover:bg-gray-100 
+dark:bg-night1 
+dark:border-night3 
+dark:hover:bg-night2">
+  <img src={img} class="max-w-full h-auto" alt="">
+  <h5 class="mb-2 text-2xl mt-4 font-bold tracking-tight text-night0 dark:text-snow2">{title}</h5>
+  <p class="font-normal text-night3 dark:text-gray-400 ">{body}</p>
+</a>

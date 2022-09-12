@@ -1,0 +1,28 @@
+---
+import SkillList from "../components/SkillList.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+const iconList = [{title:'Typescript',file:'typescript'},{title:'AngularJS',file:'angular'}, {title:'Spring Boot',file:'spring'}]
+---
+<SiteLayout>
+  <div>
+    <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />
+  </div>
+  <div class="mx-2">
+    <h3 class="text-5xl font-semibold">My time at Pernix Solutions</h3>
+    <div class="mt-4 md:flex">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad id quisquam odio quod consectetur nihil minima pariatur dolor quis labore corporis, veniam atque officia adipisci cupiditate cumque tenetur nostrum accusamus velit dignissimos, dolorem sequi! Numquam omnis distinctio totam tempora fugit hic quam maxime tempore exercitationem eligendi. Exercitationem animi placeat iure!</p>
+      <p class="mt-4 md:mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+    </div>
+	</div>
+  <div class="mt-8 mx-2">
+    <h3 class="text-5xl my-2 font-semibold">The stack I used</h3>
+    <div class="mt-8 md:max-w-3xl md:flex gap-8 md:mx-auto">
+      <SkillList items={iconList} style="grid gap-8 grid-cols-3 md:grid-cols-1 lg:md:grid-cols-1 text-2xl items-center md:mr-36"/>
+      <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+    </div>
+  </div>
+  <div class="mt-8 mx-2">
+    <h3 class="text-5xl my-2 font-semibold">Lessons learned</h3>
+      <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+  </div>
+  </SiteLayout>

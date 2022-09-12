@@ -1,0 +1,11 @@
+{
+    "svelte.enable-ts-plugin": true,
+    "saveAndRun": {
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "yarn dev"
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+---
+import Navbar from "../components/Navbar.svelte";
+import Footer from "../components/Footer.astro";
+---
+<style is:global>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+</style>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />		
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script is:inline>
+			const html = document.querySelector("html");
+			const theme = (() => {
+			  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+				return localStorage.getItem("theme");
+			  }
+			  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+				return "dark";
+			  }
+			  return "light";
+			})();
+
+			if (theme === "light") {
+			  html.classList.remove("dark");
+			} else {
+			  html.classList.add("dark");
+			}
+			window.localStorage.setItem("theme", theme);
+		  </script>
+	</head>
+	<body class="bg-snow2 text-night0 dark:bg-night0 dark:text-snow2">		
+		<Navbar client:load />
+		<div class="max-w-[1080px] mx-auto">
+			<slot />
+		</div>
+		<Footer />
+	</body>
+</html>

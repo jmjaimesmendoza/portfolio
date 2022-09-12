@@ -1,0 +1,11 @@
+---
+const {items = {}, style=''} = Astro.props;
+---
+<ul class={style}>
+  {items.map((item: {title:string, file:string}) => (
+    <li class="flex items-center">
+      <img src={`/icons/${item.file}.svg`} class="w-8 mr-2" alt="">
+      {item.title}
+    </li>
+  ))}
+</ul>
