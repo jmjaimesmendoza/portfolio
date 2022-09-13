@@ -39,7 +39,7 @@
   bg-night1
   border-b-2
 border-night2
-  dark:bg-opacity-75
+  dark:bg-opacity-80
   dark:backdrop-filter
   dark:backdrop-blur
   sticky
