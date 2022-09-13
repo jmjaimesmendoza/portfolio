@@ -11,10 +11,11 @@ import Footer from "../components/Footer.astro";
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />		
+		<meta name="description" content="width=device-width" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>JMJM</title>
-		<script is:inline is>
+		<script is:inline>
 			let domReady = (cb) => {
 				document.readyState === 'interactive' || document.readyState === 'complete'
 					? cb()
@@ -25,6 +26,8 @@ import Footer from "../components/Footer.astro";
 				// Display body when DOM is loaded
 				document.body.style.visibility = 'visible';
 			});
+			</script>
+		<script is:inline>
 			const html = document.querySelector("html");
 			const theme = (() => {
 			  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
@@ -44,7 +47,7 @@ import Footer from "../components/Footer.astro";
 			window.localStorage.setItem("theme", theme);
 		  </script>
 	</head>
-	<body style="visibility: hidden;" class="bg-snow2 text-night0 dark:bg-night0 dark:text-snow2">		
+	<body style="visibility: hidden;" class="bg-snow2 text-black dark:bg-night0 dark:text-white">		
 		<script>0</script>
 		<Navbar client:load />
 		<div class="max-w-[1080px] mx-auto">

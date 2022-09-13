@@ -8,7 +8,7 @@ export const cardlist = [
 	{
 		img:'https://nypost.com/wp-content/uploads/sites/2/2014/07/2-train.jpg?quality=75&strip=all',
 		linkTo:'/2train', 
-		title: 'My internship at 2train', 
+		title: 'My internship at 2Train', 
 		body: 'Learn more about my time as intern working on the 2train app.'
 	},
 	{

@@ -3,32 +3,52 @@ import SiteLayout from "../layouts/SiteLayout.astro";
 import Card from "../components/Card.astro";
 import SkillList from "../components/SkillList.astro";
 import { cardlist } from "../../public/info/cardList";
-const iconList =[{title:'Typescript',file:'typescript'},
-      {title:'Python',file:'python'},
+const workingIcons =[{title:'Typescript',file:'typescript'},
       {title:'React',file:'react'},
-      {title:'Svelte',file:'svelte'},
       {title:'Git',file:'git'},
+      {title:'MySQL',file:'mysql'},
       {title:'Node',file:'nodejs'}]
+const workedIcons =[
+      {title:'Python',file:'python'},
+      {title:'.NET',file:'dotnet'},
+      {title:'NestJS',file:'nest'},
+      {title:'Expo',file:'expo'},
+      {title:'Arduino',file:'arduino'},
+			]
+const learningIcons =[
+      {title:'Svelte',file:'svelte'},
+      	{title:'Astro',file:'astro'},
+      {title:'Pandas',file:'pandas'},
+			]
 ---
 <SiteLayout>
 	<div class={"justify-start items-start"}>
 		<h1 class="text-4xl md:text-6xl lg:text-7xl">Juan Martin Jaimes Mendoza</h1>
-		<h2 class="text-xl md:text-3xl lg:text-4xl text-aurora0 dark:text-frost0">Fullstack Web Developer / Computer Science Student</h2>
+		<h2 class="text-xl md:text-3xl lg:text-4xl text-aurora0 dark:text-frost1">Fullstack Web Developer / Computer Science Student</h2>
 	</div>
-	<div class="">
+	<div>
 		<img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />
 	</div>
-	<div class="mt-4 md:flex mx-2">
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad id quisquam odio quod consectetur nihil minima pariatur dolor quis labore corporis, veniam atque officia adipisci cupiditate cumque tenetur nostrum accusamus velit dignissimos, dolorem sequi! Numquam omnis distinctio totam tempora fugit hic quam maxime tempore exercitationem eligendi. Exercitationem animi placeat iure!</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+	<div class="mt-4 md:flex mx-2 text-justify gap-8">
+		<p class="max-w-lg">Hi there!, my name is Juan Martin Jaimes Mendoza and I'm a Full-Stack developer based in San José, Costa Rica. I have worked as a freelancer for a while now and also done two internships, one at Pernix Solutions and the other working at 2Train, you can find the details on those <a class="text-aurora3 dark:text-frost1 hover:underline underline-offset-2" href="/pernix"> here</a> and <a class="text-aurora3 dark:text-frost1 hover:underline underline-offset-2" href="/2train">here</a>, respectively.</p>
+		<p class="max-w-lg">I'm also a student currently enrolled on my last semester of <a class="text-aurora3 dark:text-frost1 hover:underline underline-offset-2" href="https://en.wikipedia.org/wiki/Informatics_engineering"> Informatics Engineering</a> over at ULACIT, where I've finished coursework on the following subjects: OOP, Web & Mobile Dev, SQL & NoSQL DBA, Server & Cloud Administration and (some) Cybersecurity.</p>
+	</div>
+	<div class="grid grid-rows-3 grid-cols-1 md:grid-rows-1 md:grid-cols-3">
+	<div class="mt-24 mx-2 flex flex-col items-center">
+		<h3 class="text-4xl font-semibold">I'm working with:</h3>
+		<SkillList style={'grid mt-8 gap-16 grid-cols-1 text-2xl items-center'} items={workingIcons} />
 	</div>
 	<div class="mt-24 mx-2 flex flex-col items-center">
-		<h3 class="text-5xl font-semibold">Skills</h3>
-		<SkillList style={'grid mt-8 gap-16 grid-cols-1 md:grid-cols-2 lg:md:grid-cols-6 text-2xl items-center'} items={iconList} />
-		<p class="mx-auto mt-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur dolores laboriosam doloribus amet provident? Officiis ipsam quam ducimus labore, nostrum quidem ullam eos odio ad voluptates rerum libero repellat autem vitae facilis sit ut nulla. Eaque, hic sint! Ex, culpa neque? Vitae maxime impedit dignissimos sunt corrupti dolorum quisquam possimus nostrum ducimus?</p>
+		<h3 class="text-4xl font-semibold">I've worked with:</h3>
+		<SkillList style={'grid mt-8 gap-16 grid-cols-1 text-2xl items-center'} items={workedIcons} />
 	</div>
 	<div class="mt-24 mx-2 flex flex-col items-center">
-		<h3 class="text-5xl font-semibold">Experience</h3>		
+		<h3 class="text-4xl font-semibold">I'm learning these:</h3>
+		<SkillList style={'grid mt-8 gap-16 grid-cols-1 text-2xl items-center'} items={learningIcons} />
+	</div>
+</div>
+	<div class="mt-24 mx-2 flex flex-col items-center">
+		<h3 class="text-5xl font-semibold">Experience & Projects</h3>		
 		<div class="grid mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			{cardlist.map((card) => (
 				<Card {...card}/>
