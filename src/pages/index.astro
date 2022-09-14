@@ -2,7 +2,8 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Card from "../components/Card.astro";
 import SkillList from "../components/SkillList.astro";
-import { cardlist } from "../../public/info/cardList";
+import AnimatedTitle from "../components/AnimatedTitle.astro";
+
 const workingIcons =[{title:'Typescript',file:'typescript'},
       {title:'React',file:'react'},
       {title:'Git',file:'git'},
@@ -20,14 +21,38 @@ const learningIcons =[
       	{title:'Astro',file:'astro'},
       {title:'Pandas',file:'pandas'},
 			]
+	const cardlist = [
+	{
+		img:'',
+		linkTo:'/pernix', 
+		title: 'My time at Pernix', 
+		body: 'Learn more about my work at Pernix Solutions as an intern.'
+	},
+	{
+		img:'',
+		linkTo:'/2train', 
+		title: 'My internship at 2Train', 
+		body: 'Learn more about my time as intern working on the 2train app.'
+	},
+	{
+		img:'',
+		linkTo:'/conectaEquipo', 
+		title: 'The ConectaEquipos App', 
+		body: 'Let me tell you how I built an IoT monitoring app, twice.'
+	},
+	{
+		img:'',
+		linkTo:'/archive', 
+		title: 'Other personal projects', 
+		body: 'A collection of miscellaneous projects I worked on.'
+	},
+]
 ---
 <SiteLayout>
 	<div class={"justify-start items-start"}>
-		<h1 class="text-4xl md:text-6xl lg:text-7xl">Juan Martin Jaimes Mendoza</h1>
-		<h2 class="text-xl md:text-3xl lg:text-4xl text-aurora0 dark:text-frost1">Fullstack Web Developer / Computer Science Student</h2>
-	</div>
-	<div>
-		<img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />
+		<img src="./landscape.jpeg" alt="">
+		<AnimatedTitle />
+		<h2 class="text-xl -mt-4 md:mt-4 md:text-3xl lg:text-4xl text-aurora0 dark:text-frost1">Fullstack Web Developer / Computer Science Student</h2>
 	</div>
 	<div class="mt-4 flex flex-col gap-4 md:gap-8 md:flex-row mx-2 text-justify">
 		<p class="max-w-lg">Hi there!, my name is Juan Martin Jaimes Mendoza and I'm a Full-Stack developer based in San José, Costa Rica. I have worked as a freelancer for a while now and also done two internships, one at Pernix Solutions and the other working at 2Train, you can find the details on those <a class="text-aurora3 dark:text-frost1 hover:underline underline-offset-2 rounded-md

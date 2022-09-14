@@ -1,0 +1,43 @@
+---
+
+---
+<style>
+  .will-change-transform {
+    will-change: transform;
+  }
+  .cursor::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #fff;
+  animation: cursor 0.6s linear infinite alternate;
+  will-change: opacity;
+}
+
+@keyframes cursor {
+  0%,
+  40% {
+    opacity: 1;
+  }
+
+  60%,
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+<div class="group">
+<h1 class="text-4xl md:text-6xl lg:text-7xl text-black dark:text-white">
+  Hi, I'm
+  <span
+    class="inline-flex h-20 pt-2 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform"
+  >
+    Juan Martín
+  </span>
+  <span
+    class="box-border inline-block w-1 h-10 ml-2 -mb-2 lg:-mb-1 bg-aurora0 dark:bg-frost1 md:-mb-4 md:h-16 animate-cursor will-change-transform"
+  ></span>
+</h1>
+</div>
