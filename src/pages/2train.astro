@@ -5,10 +5,10 @@ const iconList = [{title:'Typescript',file:'typescript'}, {title:'React Native',
 ---
 <SiteLayout>
   <div>
-    <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />
+    <img src="./iphone.jpeg" class="max-w-full h-auto" alt="..." />
   </div>
   <div class="mx-2">
-    <h3 class="text-5xl font-semibold">My internship at 2Train</h3>
+    <h3 class="mt-4 text-5xl font-semibold">My internship at 2Train</h3>
     <div class="mt-4 flex flex-col gap-4 md:gap-8 md:flex-row mx-2 text-justify">
       <p class="max-w-lg">2Train is a startup based in Costa Rica which goal is to provide a platform for professionals of the fitness & health industries to be able to connect with the pucblic and eachother, it'll be made up of a dashboard for said professionals to make routines or diet plans. And also a mobile app for both professionals and clients to interact with the platform.</p>
       <p class="max-w-lg">My role during this internship was that of a fullstack mobile developer focusing mainly on react native and nestJs, I worked with a team of both seasoned developers and with other less experienced interns and jr developers, the project was managed and organized using standard SCRUM methodologies and we worked with a hybrid work schedule, this internship lasted ~4 months.</p>
@@ -17,14 +17,22 @@ const iconList = [{title:'Typescript',file:'typescript'}, {title:'React Native',
   <div class="mt-8 mx-2">
     <h3 class="text-5xl my-2 font-semibold">The stack I used</h3>
     <div class="mt-8 md:max-w-3xl md:flex gap-8 md:mx-auto">
-      <SkillList items={iconList} style="grid gap-8 grid-cols-3 md:grid-cols-1 lg:md:grid-cols-1 text-2xl items-center"/>
-      <div class="">
-        <p class="mt-8 md:ml-36 md:-mt-[0.01rem]">This was my first time interacting with NestJs, I expected it to have quite the steep learning curve, but the documentation on it is great so I got the hang of it enough to be able to start working pretty quickly. It was also my first time using graphql instead of the more traditional endpoints so that was also a great learning experience, I found it to be a really nice experience working with it, could'nt say I've mastered it just yet though, so I'm still trying to learn and do more with it.</p>
-        <p class='mt-8 md:ml-36'>
-          React Native and Typescript I already had some experience with, but I had never used them together up until this point and it was great,
-          the project was structured quite nicely and i got some great feedback from the Sr's that has really helped me get a bit better at using TS.
+      <SkillList items={iconList} style="grid gap-8 grid-cols-2 md:grid-cols-1 lg:md:grid-cols-1 text-2xl items-center"/>
+      <div>
+        <p class=" text-justify mt-8 md:ml-36 md:-mt-[0.01rem]">This was my first time working with NestJs, It was also my first time using graphql. There was quite the learning curve at the start, but I got the hang of them soon enough and started working, besides building screens, endpoints and bugfixing (the 2Train app was in somwhat early development).</p>
+        <p class="mt-4 text-justify md:ml-36">
+          What I liked the most during the internship was that I got to work on the implementation of all the authentication flows within the app, using AWS Cognito and NestJS to handle the backend side of things.
         </p>
       </div>
     </div>
+  </div>
+  <div class="mx-2 mt-8">
+    <h3 class="text-5xl font-semibold">Things I learned:</h3>
+    <ul class="mt-4 ml-6 text-xl list-disc">
+      <li>How to implement user authentication and sessions using AWS Cognito.</li>
+      <li class="mt-4">How to communicate effectively as part of a team</li>
+      <li class="mt-4">How to keep an organized Git and Project structure.</li>
+      <li class="mt-4">NestJS, Graphql, and a lot of Typescript.</li>
+    </ul>
   </div>
   </SiteLayout>
