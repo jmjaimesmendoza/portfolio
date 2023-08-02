@@ -4194,20 +4194,20 @@ function create_fragment$6(ctx) {
 				name: "Juan Martín Jaimes\n",
 				social_links: [
 					{
-						"icon": "mdi:linkedin",
 						"link": {
 							"url": "https://www.linkedin.com/in/juan-martin-jaimes-jaimes-709561142/",
 							"label": "Linkedin",
 							"active": false
-						}
+						},
+						"icon": "mdi:linkedin"
 					},
 					{
-						"icon": "mdi:github",
 						"link": {
-							"url": "https://github.com",
+							"url": "https://github.com/jmjaimesmendoza",
 							"label": "Github",
 							"active": false
-						}
+						},
+						"icon": "mdi:github"
 					}
 				]
 			}
