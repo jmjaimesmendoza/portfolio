@@ -4286,7 +4286,7 @@ function create_fragment$6(ctx) {
 				heading: "Featured Projects",
 				items: [
 					{
-						"date": "March 2023 - Now",
+						"date": "Mar 2023 - Present",
 						"links": [
 							{
 								"link": {
@@ -4316,8 +4316,8 @@ function create_fragment$6(ctx) {
 							"size": null
 						},
 						"description": {
-							"html": "<p>Small desktop application project that helps chefs manage the cost of recipes and portion sizes, would like to turn this into a webapp at some point.</p>",
-							"markdown": "Small desktop application project that helps chefs manage the cost of recipes and portion sizes, would like to turn this into a webapp at some point.\n\n"
+							"html": "<p>Small desktop application project that helps chefs manage inventory &amp; the cost of recipes and portion sizes.</p>",
+							"markdown": "Small desktop application project that helps chefs manage inventory & the cost of recipes and portion sizes.\n\n"
 						}
 					}
 				]
