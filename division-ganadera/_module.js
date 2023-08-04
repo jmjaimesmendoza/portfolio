@@ -3914,10 +3914,8 @@ function create_fragment$6(ctx) {
 				date: "July 2023",
 				links: [],
 				image: {
-					"alt": "",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"url": "https://picsum.photos/600/400?blur=10",
-					"size": null
+					"alt": "Picture of buffalos",
+					"url": "https://hmwzbjjurkubszepvdui.supabase.co/storage/v1/object/public/images/a217b588-b84b-4030-b0b1-a2dd4ea5a700/bufalosweb.jpg1691185272310"
 				}
 			}
 		});
