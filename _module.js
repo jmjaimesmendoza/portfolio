@@ -4448,9 +4448,7 @@ function create_fragment$7(ctx) {
 				portrait: {
 					"image": {
 						"alt": "Profile photo of me",
-						"src": "https://hmwzbjjurkubszepvdui.supabase.co/storage/v1/object/public/images/a217b588-b84b-4030-b0b1-a2dd4ea5a700/1690762174823DSC09488.jpg",
-						"url": "https://hmwzbjjurkubszepvdui.supabase.co/storage/v1/object/public/images/a217b588-b84b-4030-b0b1-a2dd4ea5a700/1690762174823DSC09488.jpg",
-						"size": 1214
+						"url": "https://hmwzbjjurkubszepvdui.supabase.co/storage/v1/object/public/images/a217b588-b84b-4030-b0b1-a2dd4ea5a700/jmjmweb.jpg1691184616097"
 					},
 					"variation": "square"
 				},
