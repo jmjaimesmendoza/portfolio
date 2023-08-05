@@ -4530,9 +4530,7 @@ function create_fragment$7(ctx) {
 						"title": "Costea",
 						"thumbnail": {
 							"alt": "Mountains by the sea",
-							"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-							"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-							"size": null
+							"url": "https://hmwzbjjurkubszepvdui.supabase.co/storage/v1/object/public/images/a217b588-b84b-4030-b0b1-a2dd4ea5a700/logo.png1691196850401"
 						},
 						"description": {
 							"html": "<p>Small desktop application project that helps chefs manage inventory &amp; the cost of recipes and portion sizes.</p>",
